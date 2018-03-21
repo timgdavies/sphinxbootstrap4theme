@@ -9,15 +9,22 @@
 
 {% set css_files = css_files + [
     '_static/bootstrap-4.0.0-alpha3/css/bootstrap.min.css',
-    '_static/sphinxbootstrap4.css'
+    '_static/sphinxbootstrap4.css',
+    '_static/css/bootstrap.css',
+    '_static/css/bootstrap-grid.css',
+    '_static/css/bootstrap-reboot.css',
+    '_static/css/docs.css'
 ] %}
+    
 
 {% set script_files = script_files + [
     '_static/tether-1.3.1/js/tether.min.js',
     '_static/bootstrap-4.0.0-alpha3/js/bootstrap.min.js',
-    '_static/sphinxbootstrap4.js'
+    '_static/sphinxbootstrap4.js',
   ]
 %}
+
+
 
 {%- macro sphinxsidebar() %}
       {%- if render_sidebar %}
